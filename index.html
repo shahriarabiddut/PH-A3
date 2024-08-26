@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,78 +9,76 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header>
-      <div class="navbar bg-base-100">
+  <body class="bg-[#F4F4F4]" style="font-family: Manrope">
+    <header class="w-11/12 md:w-11/12 lg:3/4 mx-auto pt-4">
+      <div class="navbar">
         <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h7"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              <li><a>Homepage</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>About</a></li>
-            </ul>
+          <span
+            class="bg-[#ABEF5F] rounded-full w-8 h-8 flex justify-center items-center"
+            ><i class="fa-solid fa-arrow-right -rotate-45"></i></span
+          ><a
+            class="btn btn-ghost m-0 text-xl px-2 font-extrabold text-[#212121]"
+            >Rinterio</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-gray-400">
+            <li class="font-semibold text-black"><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end flex gap-3">
+          <div
+            class="hidden lg:flex md:flex rounded-full bg-white w-8 h-8 justify-center items-center"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-        </div>
-        <div class="navbar-center">
-          <a class="btn btn-ghost text-xl">daisyUI</a>
-        </div>
-        <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
+          <div
+            class="hidden lg:flex md:flex rounded-full bg-white w-8 h-8 justify-center items-center"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <button
+            class="hidden lg:flex md:flex rounded-full btn bg-[#ABEF5F] justify-center font-bold items-center"
+          >
+            Book Consult
+            <span
+              class="bg-black text-white rounded-full w-8 h-8 flex justify-center items-center"
+              ><i class="fa-solid fa-arrow-right -rotate-45"></i
+            ></span>
           </button>
-          <button class="btn btn-ghost btn-circle">
-            <div class="indicator">
+          <div class="flex-none lg:hidden">
+            <button class="btn rounded-full btn-ghost bg-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
+                class="inline-block h-5 w-5 stroke-current"
               >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                />
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
               </svg>
-              <span class="badge badge-xs badge-primary indicator-item"></span>
-            </div>
-          </button>
+            </button>
+          </div>
         </div>
       </div>
     </header>
