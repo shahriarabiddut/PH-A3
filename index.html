@@ -55,7 +55,7 @@
               <i class="fa-solid fa-cart-shopping"></i>
             </div>
             <button
-              class="hidden lg:flex md:flex rounded-full btn bg-[#ABEF5F] justify-center font-extrabold items-center"
+              class="hidden lg:flex md:flex rounded-full btn bg-[#ABEF5F] justify-center font-extrabold items-center border-none"
             >
               Book Consult
               <span
@@ -114,8 +114,46 @@
       </section>
     </header>
     <main>
-      <section class="bg-[#F4F4F4]">
-        <div class="w-11/12 md:w-11/12 lg:3/4 mx-auto">MEow</div>
+      <section class="bg-[#F4F4F4] ">
+        
+        <div class="w-11/12 md:w-11/12 lg:3/4 mx-auto flex flex-col lg:flex-row py-20 gap-6 lg:min-h-96 relative">
+          <div class="absolute top-9 left-2 transform -translate-x-1/2 hidden lg:block">
+            <img src="./assets/Vector.png" alt="">
+          </div>
+          <div class="left-side mt-4 lg:w-3/5 text-center lg:text-left">
+              <h4 class="btn bg-white rounded-full px-5 justify-center py-3"><i class="fa-solid fa-arrow-right"></i
+              > About Us</h4>
+              <h1 class="mx-auto lg:mx-0 text-2xl md:text-3xl lg:text-4xl w-11/12 lg:w-8/12 md:w-10/12 font-extrabold pt-6">We design thoughtful, liveable spaces</h1>
+              <p class="text-gray-500 lg:text-left text-center pt-6">The barn house captivates with its blend of rustic charm and  modern sophistication, featuring weathered wood, sleek metal accents.</p>
+              <div class="flex flex-col md:flex-row lg:flex-col  gap-4 mt-6">
+                <div class="card flex flex-row bg-base-100 shadow-xl p-2">
+                  <figure>
+                    <img
+                      src="./assets/commercial.png"
+                      alt="Movie" class="pl-4 w-full" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="text-2xl font-extrabold text-left">Commercial</h2>
+                    <p class="text-gray-500 lg:w-7/12 text-left">The barn house captivates with its blend of rustic charm and modern.</p>
+                  </div>
+                </div>
+                <div class="card flex flex-row bg-base-100 shadow-xl p-2">
+                  <figure>
+                    <img
+                      src="./assets/residential.png"
+                      alt="Movie" class="w-full pl-4" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="text-2xl font-extrabold text-left">Residential</h2>
+                    <p class="text-gray-500 lg:w-7/12 text-left">The barn house captivates with its blend of rustic charm and modern.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="right-side items-stretch flex lg:w-2/5">
+            <img src="./assets/Rectangle.png" class=" rounded-2xl object-cover w-full lg:h-full md:h-96 sm:h-96 overflow-hidden" />
+          </div>
+        </div>
         
       </section>
     </main>
